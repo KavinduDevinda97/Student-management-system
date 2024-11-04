@@ -45,12 +45,12 @@ class CourseController extends Controller
         $courses = Course::find($id);
         $input = $request->all();
         $courses->update($input);
-        return redirect('courses')->with('flash_message', 'teacher Updated!');  
+        return redirect('courses')->with('flash_message', 'Course Updated!');  
     }
     
     public function destroy(string $id): RedirectResponse
     {
         Course::destroy($id);
-        return redirect('courses')->with('flash_message', 'teacher deleted!'); 
+        return redirect('courses')->with('flash_message', 'Course deleted!'); 
     }
 }

@@ -17,10 +17,10 @@
         .sidebar {
           margin: 0;
           padding: 0;
-          width: 200px;
+          width: 150px;
           background-color: #f1f1f1;
           position: fixed;
-          height: 100%;
+          height: auto;
           overflow: auto;
         }
         
@@ -32,12 +32,12 @@
         }
          
         .sidebar a.active {
-          background-color: #04AA6D;
+          background-color: #040aaa;
           color: white;
         }
         
         .sidebar a:hover:not(.active) {
-          background-color: #555;
+          background-color: #53cb31;
           color: white;
         }
         
@@ -77,6 +77,8 @@
                 </nav>
             </div>
         </div>
+        
+        <br/>
     <div class="row">
         <div class="col-md-3">
             <div class="sidebar">
@@ -84,6 +86,7 @@
                 <a href={{url('/students')}}>Student</a>
                 <a href={{url('/teachers')}}>Teacher</a>
                 <a href={{url('/courses')}}>Courses</a>
+                <a href={{url('/batches')}}>Batches</a>
                 <a href={{url('/enrollments')}}>Enrollment</a>
                 <a href={{url('/payments')}}>Payment</a>
               </div>
@@ -97,6 +100,7 @@
               
             
         </div>
+       
         
     </div>
     
