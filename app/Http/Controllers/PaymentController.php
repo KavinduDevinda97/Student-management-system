@@ -9,6 +9,8 @@ use App\Models\Enrollment;
 use App\Models\Payment;
 use Illuminate\View\View;
 
+
+
 class PaymentController extends Controller
 {
     /**
@@ -55,5 +57,6 @@ class PaymentController extends Controller
     {
         Payment::destroy($id);
         return redirect('payments')->with('flash_message', 'Payment deleted!'); 
-    }
+
+}
 }
