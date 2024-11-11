@@ -8,6 +8,7 @@ use Illuminate\Http\Response;
 use App\Models\Enrollment;
 use App\Models\Payment;
 use Illuminate\View\View;
+use PDF;
 
 
 
@@ -59,4 +60,8 @@ class PaymentController extends Controller
         return redirect('payments')->with('flash_message', 'Payment deleted!'); 
 
 }
+
+
+
 }
+

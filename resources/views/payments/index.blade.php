@@ -3,7 +3,7 @@
     
   <div class="card">
                     <div class="card-header">
-                        <h2>Enrollment Application</h2>
+                        <h2>Payment Application</h2>
                     </div>
                     <div class="card-body">
                         <a href="{{ url('/payments/create') }}" class="btn btn-success btn-sm" title="Add New Batch">
@@ -39,6 +39,7 @@
                                                 {{ csrf_field() }}
                                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete Batch" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>
                                             </form>
+                                            <a href="{{'generate-pdf'}}" class="btn btn-primary btn-sm">Download</a>
                                         </td>
                                     </tr>
                                 @endforeach
