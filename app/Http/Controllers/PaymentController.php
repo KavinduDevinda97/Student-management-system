@@ -8,7 +8,9 @@ use Illuminate\Http\Response;
 use App\Models\Enrollment;
 use App\Models\Payment;
 use Illuminate\View\View;
-use PDF;
+//use PDF;
+use Barryvdh\DomPDF\Facade\Pdf;
+
 
 
 
@@ -61,6 +63,21 @@ class PaymentController extends Controller
 
 }
 
+public function print_pdf  ($id){
+     
+   // $payments = Payment::find($id);
+
+  // $item = Enrollment::find($id);
+   
+  
+  $payments = Payment::find($id);
+ 
+     return view('payments.invoice')->with('payments', $payments);
+
+     // $pdf = Pdf::loadView ('payments.invoice')->with('payments', $payments);
+     // return $pdf->download('invoice.pdf');
+  
+}
 
 
 }

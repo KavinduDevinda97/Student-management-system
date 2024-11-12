@@ -8,7 +8,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\BatchController;
 use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\PaymentController;
-use App\Http\Controllers\PDFController;
+
 
 
 
@@ -37,5 +37,5 @@ Route::resource("/enrollments", EnrollmentController::class);
 Route::resource("/payments", PaymentController::class);
 //Route::get('pdf-generator',[PaymentController::class , 'pdf_generator-get'] );
 
-Route::get('generate-pdf', [PDFController::class, 'generatePDF']);
+Route::get('print_pdf/{id}', [PaymentController::class, 'print_pdf']);
 
