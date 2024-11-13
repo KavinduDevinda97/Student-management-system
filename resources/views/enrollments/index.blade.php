@@ -63,7 +63,7 @@
         <div class="card-header d-flex justify-content-between align-items-center">
             <div>
                 <h5 class="mb-0 text-primary">Enrollment Application</h5>
-                <p class="text-muted mb-0 small">Manage your teaching staff</p>
+                <p class="text-muted mb-0 small">Manage your enrollments</p>
             </div>
             <a href="{{ url('/enrollments/create') }}" class="btn btn-success d-flex align-items-center">
                 <i class="fas fa-plus-circle me-2"></i> Add New 

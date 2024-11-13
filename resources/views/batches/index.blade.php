@@ -63,7 +63,7 @@
         <div class="card-header d-flex justify-content-between align-items-center">
             <div>
                 <h5 class="mb-0 text-primary">Batch Application</h5>
-                <p class="text-muted mb-0 small">Manage your ENROLLMENTS</p>
+                <p class="text-muted mb-0 small">Manage your batches</p>
             </div>
             <a href="{{ url('/batches/create') }}" class="btn btn-success d-flex align-items-center">
                 <i class="fas fa-plus-circle me-2"></i> Add New Batch
